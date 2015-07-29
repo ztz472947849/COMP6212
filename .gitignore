@@ -1,0 +1,11 @@
+# Ignore data files
+*.csv
+*.prn
+
+# Ignore LaTeX generated files
+*.pdf
+*.aux
+*.log
+*.run.xml
+*.bbl
+*.blg
