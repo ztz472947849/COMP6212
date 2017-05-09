@@ -52,4 +52,4 @@ plot(mean_rbf);
 legend('Black-Scholes','RBF');
 title('data fitness');
 xlabel('trading years');
-ylabel('anual shifting ratio');
+ylabel('annual shifting ratio');
