@@ -38,3 +38,18 @@ plot(bls_prices);
 hold on;
 plot(rbf_prices);
 legend('Black-Scholes', 'RBF');
+
+mean_bls=[];
+mean_rbf=[];
+figure;
+for t= [1,1+222,1+444,1+666,1+888]
+    mean_bls=[mean_bls ;std(bls_prices(t:t+221))];
+    mean_rbf=[mean_rbf ;std(rbf_prices(t:t+221))];
+end
+plot(mean_bls);
+hold on
+plot(mean_rbf);
+legend('Black-Scholes','RBF');
+title('data fitness');
+xlabel('trading years');
+ylabel('anual shifting ratio');
